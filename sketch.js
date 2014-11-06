@@ -1,4 +1,4 @@
-var bg, img1, img2, img3;
+var bg, img1, img2, img3, img4;
 
 function setup() 
 {
