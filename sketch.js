@@ -1,8 +1,10 @@
+var bg, img;
+
 function setup() 
 {
    createCanvas(1000,1000);
    bg = loadImage("galaxy.jpg");
-
+   img = loadImage("earth.jpg");
 }
 
 function draw() 
@@ -10,14 +12,13 @@ function draw()
    background(bg);
    noStroke();
    fill(255,139,0);
-    ellipse(500,500,150,150);
+   ellipse(500,500,150,150);
 
    //earth
    var duration = 3000;
    var timing = (new Date()%duration)/duration;
 
-   fill(151,239,172);
-   ellipse(500 + Math.cos(timing*2*PI)*200,           // x좌표
+   image(img, 500 + Math.cos(timing*2*PI)*200,           // x좌표
         500 + Math.sin(timing*2*PI)*200, // y좌표
         100,                                  // width
         100);            
