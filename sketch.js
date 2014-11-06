@@ -26,7 +26,8 @@ function draw()
         100);   
    nofill();
    stroke(255);
-   ellipse( 500-100/2 + Math.cos(timing*2*PI)*200,           // x좌표
+   
+   ellipse(500-100/2 + Math.cos(timing*2*PI)*200,           // x좌표
         500-100/2 + Math.sin(timing*2*PI)*200, // y좌표
         100,                                  // width
         100);               
@@ -45,7 +46,7 @@ function draw()
    var duration = 5000;
    var timing = (new Date()%duration)/duration;
 
-   image(img4-60/2, 500 + Math.cos(timing*2*PI)*300+ Math.cos(timing*2*PI)*100,           // x좌표
+   image(img4, 500-60/2 + Math.cos(timing*2*PI)*300+ Math.cos(timing*2*PI)*100,           // x좌표
         500-60/2 + Math.sin(timing*2*PI)*300+ Math.cos(timing*2*PI)*100, // y좌표
         60,                                  // width
         60);                                  
