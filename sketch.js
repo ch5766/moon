@@ -23,7 +23,13 @@ function draw()
    image(img1, 500-100/2 + Math.cos(timing*2*PI)*200,           // x좌표
         500-100/2 + Math.sin(timing*2*PI)*200, // y좌표
         100,                                  // width
-        100);            
+        100);   
+   nofill();
+   stroke(255);
+   ellipse( 500-100/2 + Math.cos(timing*2*PI)*200,           // x좌표
+        500-100/2 + Math.sin(timing*2*PI)*200, // y좌표
+        100,                                  // width
+        100);               
 
    //moon
    var duration = 1000;
@@ -39,7 +45,6 @@ function draw()
    var duration = 5000;
    var timing = (new Date()%duration)/duration;
 
-   fill(65,77,181);
    image(img4-60/2, 500 + Math.cos(timing*2*PI)*300+ Math.cos(timing*2*PI)*100,           // x좌표
         500-60/2 + Math.sin(timing*2*PI)*300+ Math.cos(timing*2*PI)*100, // y좌표
         60,                                  // width
